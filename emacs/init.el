@@ -60,7 +60,7 @@
 
 
 ;; FONT
-(set-face-attribute 'default nil :font "Adwaita Mono" :height 120)
+(set-face-attribute 'default nil :font "Iosevka" :height 130)
 
 (use-package doom-themes)
 (load-theme 'doom-material-dark t)
@@ -210,3 +210,4 @@
 
 
 (require 'terminal)
+(require 'carousel)
