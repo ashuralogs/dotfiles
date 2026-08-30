@@ -186,8 +186,20 @@
     t))
 
 (setq org-format-latex-options
-      (plist-put org-format-latex-options
-		 :scale 1.1))
+      (plist-put
+       (plist-put org-format-latex-options
+                  :scale 1)
+       :latex-header
+       "\\usepackage{cancel}
+\\usepacage{multirow}"))
+
+;; (setq org-format-latex-options
+;;       (plist-put org-format-latex-options
+;; 		 :scale 1.1))
+
+;; (set
+;; 		 :latex-header
+;; 		 "\\usepackage{cancel}"))
 
 (setq org-preview-latex-image-directory
       "~/.ltximg/")
